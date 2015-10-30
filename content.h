@@ -24,6 +24,7 @@ public:
 class pictureContent:Content
 {
     friend class Translator;
+    friend class Structure;
 private:
     std::string location;//文件位置之类
     //其他关于排版布局的参数，待添加
@@ -31,6 +32,7 @@ private:
 class formContent:Content
 {
     friend class Translator;
+    friend class Structure;
 private:
     std::vector<std::vector<std::string> > form;//表格内容
     textContent title;//标题
