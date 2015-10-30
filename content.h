@@ -33,6 +33,7 @@ class formContent:Content
 {
     friend class Translator;
     friend class Structure;
+
 private:
     std::vector<std::vector<std::string> > form;//表格内容
     textContent title;//标题

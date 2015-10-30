@@ -1,9 +1,11 @@
-#include "kernel.h"
-using namespace std;
-int main()
+#include "frontend.h"
+#include <QApplication>
+
+int main(int argc, char *argv[])
 {
-    Structure a(textContent("this is a sample text"));
-    a.addChildContent(textContent("this is paragraph 1"));
-    Translator::translate(a,"test.pdf");
-    cout<<"check ok!"<<endl;
+    QApplication a(argc, argv);
+    FrontEnd w;
+    w.show();
+
+    return a.exec();
 }
