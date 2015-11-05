@@ -15,7 +15,8 @@ TEMPLATE = app
 SOURCES += main.cpp\
         frontend.cpp \
     content.cpp \
-    structure.cpp
+    structure.cpp \
+    translator.cpp
 
 HEADERS  += frontend.h \
     format.h \
